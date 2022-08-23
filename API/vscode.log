@@ -1,0 +1,13 @@
+nohup: ignoring input
+[2022-08-18T13:50:06.261Z] info  code-server 4.5.2 35372d3832521d25327e11c9776096730df22ecb
+[2022-08-18T13:50:06.263Z] info  Using user-data-dir ~/.local/share/code-server
+[2022-08-18T13:50:06.288Z] info  Using config file ~/.config/code-server/config.yaml
+[2022-08-18T13:50:06.288Z] info  HTTP server listening on http://0.0.0.0:8080/ 
+[2022-08-18T13:50:06.288Z] info    - Authentication is disabled 
+[2022-08-18T13:50:06.289Z] info    - Not serving HTTPS 
+[21:50:11] Extension host agent started.
+[21:50:12] Deleted from disk ms-python.python /root/.local/share/code-server/extensions/ms-python.python-2022.12.0
+[21:50:43] [192.168.5.10][dccef1bd][ManagementConnection] New connection established.
+[21:51:04] [192.168.5.10][8c262818][ExtensionHostConnection] New connection established.
+[21:51:04] [192.168.5.10][8c262818][ExtensionHostConnection] <15797> Launched Extension Host Process.
+[21:52:04] [192.168.5.10][741516be][ManagementConnection] Unknown reconnection token (never seen).

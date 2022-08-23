@@ -1,0 +1,22 @@
+{
+    "jsonrpc": "2.0",
+    "method": "runCmds",
+    "params": {
+      "version": 1,
+      "cmds": [
+        "enable ",
+        "conf ",
+        "int et1",
+        "no switchport",
+        "ip address 1.1.1.1/24"
+      ],
+      "format": "json",
+      "timestamps": false,
+      "autoComplete": true,
+      "expandAliases": false,
+      "stopOnError": true,
+      "streaming": false,
+      "includeErrorDetail": false
+    },
+    "id": "EapiExplorer-1"
+  }
