@@ -1,0 +1,21 @@
+---
+  - hosts: leaf1-DC1
+    gather_facts: no
+    tasks:
+    - name: Add User
+      arista.eos.eos_user:
+        name: ansible
+        nopassword: yes
+        state: present
+    - name: set privilege and role
+      arista.eos.eos_user:
+        name: ansible
+        nopassword: yes
+        privilege: 15
+        role: network-admin
+        state: present
+    - name: Add SSH key
+      arista.eos.eos_user:
+        name: ansible  
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present

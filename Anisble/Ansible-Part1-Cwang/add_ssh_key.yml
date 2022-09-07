@@ -1,0 +1,23 @@
+---
+  - hosts: leaf1-DC1
+    tasks:
+    - name: create a new user
+      eos_user:
+         name: ansible
+         nopassword: yes
+         state: present
+    - name: set privilege and role
+      eos_user:
+         name: ansible
+         nopassword: yes
+         privilege: 15
+         role: network-admin
+         state: present
+    - name: set ansible users to ssh key
+      eos_user:
+         name: ansible
+         nopassword: yes
+         ssh_keyfile: 
+          state: present
+
+

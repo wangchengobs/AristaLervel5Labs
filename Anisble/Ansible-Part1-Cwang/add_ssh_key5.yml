@@ -1,0 +1,20 @@
+---
+  - hosts: all
+    gather_facts: no
+    tasks:
+    - name: Add User
+      arista.eos.eos_user:
+        name: automator 
+        nopassword: yes
+        state: present
+    - name: set role and privilege
+      arista.eos.eos_user:
+        name: automator
+        privilege: 15
+        nopassword: yes
+        role: network-admin
+    - name: Add SSH key
+      arista.eos.eos_user:
+        name: automator
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present
